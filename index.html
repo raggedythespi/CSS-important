@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button {
+            background-color: gray !important;
+            color: white !important;
+            padding: 5px;
+            border: 1px solid black !important;
+        }
+
+        #myDiv a {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+    <title>CSS !important</title>
+</head>
+<body>
+    <p>One way to use !important is to assume you want a special look for all buttons on page> Here, buttons are styled with a gray background-color, white text, and some padding and border.</p>
+    <p>Standard button: <a class="button" href="https://www.w3schools.com/tags/tag_button.asp#:~:text=The%20tag%20defines%20a%20clickable%20button.">Tag Button</a></p>
+    <p>Standard button: <a class="button" href="https://www.w3schools.com/css/css_important.asp">CSS !important</a></p>
+    <p>The look of a button can sometimes change if we put it inside another element with higher specificity, and the properties get in conflict.</p>
+    <p>Standard Button: <a class="button" href="https://www.w3schools.com/css/">CSS Turotial</a></p>
+    <div id="myDiv">
+        <p>A link button inside myDiv: <a class="button" href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+        <p>A link button inside myDiv: <a class="button" href="https://www.w3schools.com/html/">HTNL Tutorial</a></p>
+    </div>
+    <p>To force all the buttons to have the same look, no matter what, we can add the !important rule to the propeties of button like this:</p>
+    <p>Standard Button: <a class="button" href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+    <div id="myDiv">
+        <p>A link button inside myDiv: <a href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+        <p>A link button inside myDiv: <a class="button" href="https://www.w3schools.com/html/">HTNL Tutorial</a></p>
+    </div>
+</body>
+</html>
